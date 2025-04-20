@@ -22,32 +22,21 @@
     snippets.luasnip.enable = true;
     binds = {
       whichKey.enable = true;
-      dashboard.dashboard-nvim.enable = true;
     };
 
     languages = {
-      # OPTIONS
-      # enableDAP = true;
       enableLSP = true;
       enableTreesitter = true;
-      # enableFormat = true;
-    };
-
-    #LANGUAGES
-    nix = {
-      enable = true;
-      extraDiagnostics.enable = true;
-      lsp = {
-        server = "nixd";
-      };
-      format = {
+      nix = {
         enable = true;
+        extraDiagnostics.enable = true;
+        lsp = {
+          server = "nixd";
+        };
+        format = {
+          enable = true;
+        };
       };
-    };
-
-    ui = {
-      borders.enable = true;
-      colorizer.enable = true;
     };
 
     telescope = {
@@ -72,11 +61,8 @@
       context.enable = true;
     };
 
-    useSystemClipboard = true;
-
     options = {
       backup = false;
-      # completeopt = ''{ "menuone", "noselect" }'';
       conceallevel = 0;
       fileencoding = "utf-8";
       hidden = true;
@@ -107,7 +93,6 @@
       sidescrolloff = 8;
       lazyredraw = true;
       termguicolors = true;
-      # spelllang= "en,cjk,";
     };
   };
 }
