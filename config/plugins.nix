@@ -82,6 +82,15 @@ in {
         package = vim-be-good;
       };
 
+      hardtime-nvim = {
+        package = hardtime-nvim;
+        setup = "require('hardtime').setup()";
+      };
+
+      nui-nvim = {
+        package = nui-nvim;
+      };
+
       colorizer = {
         package = nvim-colorizer-lua;
         setup = "require('colorizer').setup {}";
