@@ -87,10 +87,6 @@ in {
         setup = "require('hardtime').setup()";
       };
 
-      nui-nvim = {
-        package = nui-nvim;
-      };
-
       colorizer = {
         package = nvim-colorizer-lua;
         setup = "require('colorizer').setup {}";
